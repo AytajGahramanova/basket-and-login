@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="signUp.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <p>
+          Have an account?
+          <a href="signIn.html">Login</a>
+        </p>
+        <h2>Sign Up</h2>
+        <form action="#" id="form">
+          <div class="input-wrapper">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Username" id="userNameInput" />
+            <div class="message">
+              <p>This field couldn't be empty</p>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <i class="fa-regular fa-envelope"></i>
+            <input
+              type="text"
+              id="emailInput"
+              placeholder="Email"
+              onkeydown="validation()"
+            />
+            <span id="email-error"></span>
+          </div>
+
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Password" id="passwordInput" />
+            <div class="message">
+              <p>This field couldn't be empty</p>
+            </div>
+          </div>
+
+          <button type="submit">Register</button>
+          <div class="input-wrapper-check">
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember me</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="signUp.js"></script>
+  </body>
+</html>

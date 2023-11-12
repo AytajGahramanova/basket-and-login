@@ -1,0 +1,93 @@
+a {
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 7% auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(141, 188, 85, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 50px 150px;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #333;
+  transform: translateX(50%);
+}
+
+input {
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 60px;
+}
+
+.input-wrapper #rememberMe {
+  margin-right: 5px;
+}
+
+.wrapper button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 117px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.wrapper label {
+  margin-left: 5px;
+}
+.input-wrapper-check {
+  display: flex;
+  margin: 5px;
+}
+#userNameInput,
+#passwordInput {
+  border: 1px solid #ccc;
+}
+
+#userNameInput.invalid,
+#passwordInput.invalid {
+  border: 1px solid red;
+}
+.message {
+  border: 1px solid #be3144;
+  border-radius: 10px;
+  display: none;
+  align-items: center;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+}
+.message p {
+  text-align: center;
+  color: red;
+  margin: 8px;
+}
+
+#email-error{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}

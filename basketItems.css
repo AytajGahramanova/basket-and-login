@@ -1,0 +1,12 @@
+.container {
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+h3 {
+  font-size: 22px;
+  margin: 20px;
+}
+.price-wrapper {
+  display: flex;
+  align-items: center;
+}
